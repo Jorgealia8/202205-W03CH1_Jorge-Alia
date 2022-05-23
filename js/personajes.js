@@ -3,14 +3,36 @@ import { Luchador } from './Luchador.js';
 import { Asesor } from './Asesor.js';
 import { Escudero } from './Escudero.js';
 
-let p1 = new Rey('Joffrey Baratheon', 'Baratheon', '14', '5');
-let p2 = new Luchador('Jaime Lannister', 'Lannister', '34', 'axe', '8');
-let p3 = new Luchador('Daenerys Targaryen', 'Targar', '31', 'stones', '9');
-let p4 = new Asesor('Tyrion Lannister', 'Lannin', '50', 'Daenerys');
-let p5 = new Escudero('Bronn', 'Sinfa', '13', '9', 'Jaime');
+let p1 = new Rey(
+    'Joffrey Baratheon',
+    'Baratheon',
+    '14',
+    './img/joffrey.jpg',
+    '5'
+);
+let p2 = new Luchador(
+    'Jaime Lannister',
+    'Lannister',
+    '34',
+    './img/jaime.jpg',
+    'axe',
+    '8'
+);
+let p3 = new Luchador(
+    'Daenerys Targaryen',
+    'Targar',
+    '31',
+    './img/daenerys.jpg',
+    'stones',
+    '9'
+);
+let p4 = new Asesor(
+    'Tyrion Lannister',
+    'Lannin',
+    '50',
+    './img/tyrion.jpg',
+    p3.name
+);
+let p5 = new Escudero('Bronn', 'Sinfa', '13', './img/bronn.jpg', '9', p2.name);
 
-console.log(p1);
-console.log(p2);
-console.log(p3);
-console.log(p4);
-console.log(p5);
+export let array = [p1, p2, p3, p4, p5];
