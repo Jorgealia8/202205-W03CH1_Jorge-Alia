@@ -42,13 +42,13 @@ export function imprim(personaje) {
                 <ul class="list-unstyled">
                     <li>Edad: ${personaje.age}</li>
                     <li>
-                        Estado: ${statePersonaje};  
+                        Estado: ${statePersonaje}  
                     </li>
                 </ul>
             </div>
             <div class="character__overlay">
                 <ul class="list-unstyled">
-                    ${impr};
+                    ${impr}
                 </ul>
                 <div class="character__actions">
                     <button class="character__action btn">habla</button>
